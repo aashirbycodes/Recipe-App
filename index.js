@@ -16,8 +16,8 @@ function checkRecipe() {
                     return;
                 }
 
-                    divRef.innerHTML = meals.map((meal) => {
-                        return `
+                divRef.innerHTML = meals.map((meal) => {
+                    return `
                     <div>
 
                         <img 
@@ -37,11 +37,11 @@ function checkRecipe() {
 
                     </div>
                 `;
-                    }).join("");
+                }).join("");
             })
-            .catch((err)=>{
-            console.log(err);
-        });
+            .catch((err) => {
+                console.log(err);
+            });
     }
     catch (err) {
         console.log(err);
